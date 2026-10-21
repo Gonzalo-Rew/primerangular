@@ -1,0 +1,19 @@
+<h1>Form Component</h1>
+<h3>{{ mensaje }}</h3>
+<form #formuser="ngForm" (ngSubmit)="recibirDatos()">
+  <label>Nombre:</label>
+  <input type="text" [(ngModel)]="user.nombre" name="cajanombre" #cajanombre="ngModel" /><br />
+  <label>Apellido:</label>
+  <input
+    type="text"
+    [(ngModel)]="user.apellido"
+    name="cajaapellido"
+    #cajaapellido="ngModel"
+  /><br />
+  <label>Edad:</label>
+  <input type="number" [(ngModel)]="user.edad" name="cajaedad" #cajaedad="ngModel" /><br />
+  <button type="submit">Enviar</button>
+</form>
+<h2>Nombre: {{ user.nombre }}</h2>
+<h2>Apellido: {{ user.apellido }}</h2>
+<h2>Edad: {{ user.edad }}</h2>

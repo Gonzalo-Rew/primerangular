@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 
 @Component({
-  selector: "primer-coponent",
+  selector: "primer-component",
   standalone: false,
   templateUrl: "./primer.component.html",
   styleUrl: "./primer.component.css",
